@@ -27,6 +27,7 @@ public class EnemigosPredefinidos {
 
     }
 
+
     public List<Personaje> getHeroes() {
         return heroes;
     }

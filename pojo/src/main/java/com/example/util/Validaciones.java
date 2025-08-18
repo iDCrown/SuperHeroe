@@ -1,6 +1,17 @@
 package com.example.util;
 
+import java.util.regex.Pattern;
+
 public class Validaciones {
+
+    // Nombre: solo letras (unicode), espacios y guion. Longitud 3..20
+    private static final Pattern NOMBRE_PATTERN = Pattern.compile("^[\\p{L}\\s\\-]{3,20}$");
+
+    // Alias: letras (unicode), dígitos, espacios, guion y underscore. Longitud 1..20
+    private static final Pattern ALIAS_PATTERN  = Pattern.compile("^[\\p{L}0-9\\s\\-_]{1,20}$");
+
+
+
     /**
      * Valida que el nombre del personaje cumpla con las reglas:
      * - No puede ser nulo
@@ -11,11 +22,12 @@ public class Validaciones {
      * @return true si es válido, false en caso contrario
      */
     public static boolean validarNombre(String nombre) {
-        return nombre != null && 
-        nombre.trim().matches("[a-zA-Z1-9À-ÖØ-öø-ÿ]+.?(( |-)[a-zA-Z1-9À-ÖØ-öø-ÿ]+.?)*") && 
-        nombre.length() >= 2 &&
-        nombre.length() <= 20;
+        if (nombre == null) return false;
+        String t = nombre.trim();
+        if (t.length() < 3 || t.length() > 20) return false;
+        return NOMBRE_PATTERN.matcher(t).matches();
     }
+    
     /**
      * Valida que el alias del personaje cumpla con las reglas:
      * - No puede ser nulo
@@ -26,11 +38,11 @@ public class Validaciones {
      * @return true si es válido, false en caso contrario
      */
     public static boolean validarAlias(String alias) {
-        return alias != null && 
-        alias.trim().matches("[a-zA-Z1-9À-ÖØ-öø-ÿ]+.?(( |-)[a-zA-Z1-9À-ÖØ-öø-ÿ]+.?)*") && 
-        alias.isEmpty() && 
-        alias.length() >= 1 &&
-        alias.length() <= 20;
+        if (alias == null) return false;
+        String t = alias.trim();
+        if (t.isEmpty()) return false;
+        if (t.length() < 1 || t.length() > 20) return false;
+        return ALIAS_PATTERN.matcher(t).matches();
     }
 
     /**
