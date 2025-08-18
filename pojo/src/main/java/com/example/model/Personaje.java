@@ -1,15 +1,12 @@
 package com.example.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public abstract class Personaje {
+public  class Personaje {
 
     //Atributos principales de cada personaje (Héroe o Villano)
-    protected String nombre;
-    protected String alias;
-    protected Bando bando; //Enum para la selección del bando del personaje
-    protected int vidas;
+    private String nombre;
+    private String alias;
+    private Bando bando; //Enum para la selección del bando del personaje
+    private int vidas;
 
     //Constructor
     public Personaje(){
