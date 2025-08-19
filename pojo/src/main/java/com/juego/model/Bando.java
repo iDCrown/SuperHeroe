@@ -1,4 +1,4 @@
-package com.example.model;
+package com.juego.model;
 
 public enum Bando {
     //Bandos disponibles para el juego

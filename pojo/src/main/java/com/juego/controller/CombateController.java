@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.juego.controller;
 
 
 public class CombateController {

@@ -1,14 +1,14 @@
-package com.example.util;
+package com.juego.util;
 
 import java.util.regex.Pattern;
 
 public class Validaciones {
 
     // Nombre: solo letras (unicode), espacios y guion. Longitud 3..20
-    private static final Pattern NOMBRE_PATTERN = Pattern.compile("^[\\p{L}\\s\\-]{3,20}$");
+    private static final Pattern NOMBRE_PATTERN = Pattern.compile("^[\\p{L}\\s\\-]{3,20}$*");
 
     // Alias: letras (unicode), dígitos, espacios, guion y underscore. Longitud 1..20
-    private static final Pattern ALIAS_PATTERN  = Pattern.compile("^[\\p{L}0-9\\s\\-_]{1,20}$");
+    private static final Pattern ALIAS_PATTERN  = Pattern.compile("^[\\p{L}0-9\\s\\-_]{1,20}$*");
 
 
 

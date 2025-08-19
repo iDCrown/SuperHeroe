@@ -1,4 +1,4 @@
-package com.example.model;
+package com.juego.model;
 
 public  class Personaje {
 

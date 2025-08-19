@@ -1,7 +1,7 @@
 
 import org.junit.jupiter.api.Test;
 
-import com.example.util.Validaciones;
+import com.juego.util.Validaciones;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,12 +1,12 @@
-package com.example.service;
-
-import com.example.model.Personaje;
-import com.example.model.Bando;
-import com.example.util.Validaciones;
+package com.juego.service;
 
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
+
+import com.juego.model.Bando;
+import com.juego.model.Personaje;
+import com.juego.util.Validaciones;
 
 public class PersonajeService {
     private static final int VIDAS_JUGADOR = 3; // Constante: jugador siempre inicia con 3 vidas
