@@ -1,6 +1,6 @@
 package com.juego.service;
 
-import com.juego.model.EnemigosPredefinidos;
+// import com.juego.model.EnemigosPredefinidos;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +29,6 @@ public class HistoricoService {
         this.eventos.add(t);
     }
 
-
-      
-    
 
     public String obtenerResumen(){
 

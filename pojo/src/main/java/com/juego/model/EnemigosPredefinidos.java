@@ -15,15 +15,15 @@ public class EnemigosPredefinidos {
     }
 
     public void crearHeroes() {
-        heroes.add(new Personaje("Red Riot", "Rikiya Yotsubashi", Bando.HEROE, 3));
+        heroes.add(new Personaje("Rikiya Yotsubashi", "Red Riot", Bando.HEROE, 3));
         heroes.add(new Personaje("Mirio Togata", "Lemillion", Bando.HEROE, 4));
         heroes.add(new Personaje("Enji Todoroki", "Endeavor", Bando.HEROE, 5));
     }
 
     public void crearVillanos() {
         villanos.add(new Personaje("Himiko Toga", "Himiko Toga", Bando.VILLANO, 3));
-        villanos.add(new Personaje("Dabi", "Touya Todoroki", Bando.VILLANO, 4));
-        villanos.add(new Personaje("Tomura Shigaraki", "Tenko Shimura", Bando.VILLANO, 5));
+        villanos.add(new Personaje("Touya Todoroki", " Dabi", Bando.VILLANO, 4));
+        villanos.add(new Personaje("Tenko Shimura", " Tomura Shigaraki", Bando.VILLANO, 5));
 
     }
 

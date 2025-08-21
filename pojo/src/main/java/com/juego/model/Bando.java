@@ -17,17 +17,22 @@ public enum Bando {
 
         // aceptar "1"/"2" como HEROE o VILLANO. También, si el usuario desea escribir la palabra, lo reconoce como elección. Retorna un héroe o un villano.
 
+
         if (s.equals("1") || s.equals("HEROE") || s.equals("HÉROE")) {
             return HEROE;
-        }
-        if (s.equals("2") || s.equals("VILLANO")) {
+        } else if(s.equals("2") || s.equals("VILLANO")){
             return VILLANO;
+        } else {
+            System.out.println("Bando inválido");
+            return null;
         }
+        
         //Con esto se intenta normalizar acentos como HÉROE o HEROÉ para que lo covierta al valor del enum "HÉROE -> HEROE". Sino lo hace, atrapa la excepción y retorna null.
-        try {
-            return Bando.valueOf(s.replace("É","E"));
-        } catch (IllegalArgumentException e) {
-            return null; // input inválido, se maneja en PersonajeService
-        }
+        
+        // try {
+        //     return Bando.valueOf(s.replace("É","E"));
+        // } catch (IllegalArgumentException e) {
+        //     return null; // input inválido, se maneja en PersonajeService
+        // }
     }
 }

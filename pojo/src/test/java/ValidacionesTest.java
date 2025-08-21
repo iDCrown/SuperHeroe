@@ -17,5 +17,12 @@ public class ValidacionesTest {
         assertFalse( Validaciones.validarNombre("Nombre@") ); // Caracteres especiales no permitidos
         assertFalse( Validaciones.validarNombre("  ") ); // Espacios en blanco no permitidos
         assertFalse( Validaciones.validarNombre("1234545") ); // Solo números no permitidos
+
+        assertTrue( Validaciones.validarAlias("Deku") );
+        assertTrue( Validaciones.validarAlias("Midoriya") );
+        assertFalse( Validaciones.validarAlias("Nombre con -") ); // Guiones permitidos
+        assertFalse( Validaciones.validarAlias("Nombre con _") ); // Underscore permitido
+        assertFalse( Validaciones.validarAlias("123") ); // Espacios permitidos
     }
+    
 }

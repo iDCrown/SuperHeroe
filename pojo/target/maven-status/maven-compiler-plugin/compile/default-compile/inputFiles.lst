@@ -1,6 +1,9 @@
-/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/example/controller/CombateController.java
-/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/example/main.java
-/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/example/model/Bando.java
-/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/example/model/EnemigosPredefinidos.java
-/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/example/model/Personaje.java
-/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/example/util/Validaciones.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/controller/CombateController.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/controller/juegoController.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/main.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/model/Bando.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/model/EnemigosPredefinidos.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/model/Personaje.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/service/HistoricoService.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/service/PersonajeService.java
+/Users/saravargas/Desktop/JAVA Y PHP/pojo/pojo/src/main/java/com/juego/util/Validaciones.java
