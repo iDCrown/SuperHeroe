@@ -37,15 +37,18 @@ public class HistoricoService {
 
         //El método inicia con una validación de la lista de eventos, si esta vacía, entonces imprimirá un mensaje diciendo que no hay eventos registrados. Por el contrario, si no esta vacía, entonces con la clase StringJoiner construye la cadena a partir de todos los eventos de cada ronda con un separador el cual es el salto de línea.
         if(eventos.isEmpty()){
-            return "NO existen eventos registrados";
+            return "Es hora de escríbir una nueva historia";
         }
         StringJoiner sj = new StringJoiner("\n");
+        
 
         //Finalmente, el método recorre la lista en orden y se va añadiendo cada evento al StringJoiner, colocando automaticamente el salto de línea que es el separador y devuelve el string construido.
         for (String e : eventos) {
             sj.add(e);
         }
-        return sj.toString();
-    
+
+        String resultado = sj.toString();
+        eventos.clear();
+        return resultado;
     }
 }
