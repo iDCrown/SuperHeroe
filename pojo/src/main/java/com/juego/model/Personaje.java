@@ -1,4 +1,4 @@
-package com.example.model;
+package com.juego.model;
 
 public  class Personaje {
 
@@ -67,11 +67,11 @@ public  class Personaje {
     }
 
     public String toStringFicha() {
-        return "=== FICHA DEL PERSONAJE ===\n" +
-               "Nombre: " + nombre + "\n" +
-               "Alias: " + alias + "\n" +
-               "Bando: " + bando + "\n" +
-               "Vidas: " + vidas + "\n";
+    return 
+        "Nombre: " + nombre + "\n" +
+        "Alias: " + alias + "\n" +
+        "Bando: " + bando + "\n" +
+        "Vidas: " + vidas + "\n";
     }
 
 }
